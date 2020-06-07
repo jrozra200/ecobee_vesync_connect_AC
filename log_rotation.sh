@@ -1,3 +1,4 @@
+#!/bin/bash
 # LOG ROTATION
 
 echo $(date)': Log Rotation Script Started.'
