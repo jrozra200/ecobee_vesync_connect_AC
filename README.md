@@ -37,7 +37,19 @@ create a new instance, but there is no outstanding charges. The path of least
 resistance for me was to go to another cloud provide. I think it will be like $5 
 a month to run a small instance in the google cloud. Whatever.
 
-## R Requirements
+### Server Requirements
+
+You don't have to install much on the server - just R, the python pip installer, 
+and open ssl. 
+
+```
+sudo apt-get install r-base
+sudo apt-get install python3-pip
+sudo apt-get install libssl-dev
+sudo apt-get install libcurl4-openssl-dev
+```
+
+### R Requirements
 
 You'll just need a few packages installed to run the R bit:
 
@@ -51,7 +63,7 @@ You can run this line of code:
 install.packages(c("lubridate", "httr", "jsonlite"))
 ```
 
-## Python Requirements
+### Python Requirements
 
 There are 4 packages called, but 2 should be installed with your system already. 
 
