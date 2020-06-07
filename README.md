@@ -47,6 +47,7 @@ sudo apt-get install r-base
 sudo apt-get install python3-pip
 sudo apt-get install libssl-dev
 sudo apt-get install libcurl4-openssl-dev
+sudo apt-get install mailutils
 ```
 
 ### R Requirements
