@@ -81,3 +81,8 @@ You can do that with this code:
 sudo pip3 install pandas
 sudo pip3 install pyvesync
 ```
+
+### Mail Relay Requirements (for notifications)
+
+Go [here](https://linuxconfig.org/configuring-gmail-as-sendmail-email-relay) and 
+follow the steps. 
