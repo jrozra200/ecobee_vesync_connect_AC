@@ -57,7 +57,7 @@ You'll just need a few packages installed to run the R bit:
 2. httr
 3. jsonlite
 
-You can run this line of code: 
+You can run this line of code in `sudo R` (as root): 
 
 ```
 install.packages(c("lubridate", "httr", "jsonlite"))
@@ -78,6 +78,6 @@ The other 2, you'll need to install:
 You can do that with this code:
 
 ```
-pip3 install pandas
-pip3 install pyvesync
+sudo pip3 install pandas
+sudo pip3 install pyvesync
 ```
