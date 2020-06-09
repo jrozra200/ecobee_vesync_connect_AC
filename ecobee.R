@@ -60,7 +60,7 @@ info <- info[info$name == "ellie", ]
 
 current_time <- hour(Sys.time()) + (minute(Sys.time()) / 60)
 is_morning_nap <- ifelse(current_time >= 11.5 & current_time <= 13, TRUE, FALSE)
-is_afternoon_nap <- ifelse(current_time >= 15.5 & current_time <= 18.5, TRUE, FALSE)
+is_afternoon_nap <- ifelse(current_time >= 15 & current_time <= 18.5, TRUE, FALSE)
 is_sleeptime <- ifelse(current_time >= 22 | current_time <= 10, TRUE, FALSE)
 
 info$action <- ifelse(((is_morning_nap == TRUE | is_afternoon_nap == TRUE | 
