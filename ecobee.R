@@ -63,10 +63,12 @@ is_morning_nap <- ifelse(current_time >= 11.5 & current_time <= 13, TRUE, FALSE)
 is_afternoon_nap <- ifelse(current_time >= 15 & current_time <= 18.5, TRUE, FALSE)
 is_sleeptime <- ifelse(current_time >= 22 | current_time <= 10, TRUE, FALSE)
 
-info$action <- ifelse(((is_morning_nap == TRUE | is_afternoon_nap == TRUE | 
-                           is_sleeptime == TRUE) & info$temp >= 68) | 
-                          (!(is_morning_nap == TRUE | is_afternoon_nap == TRUE | 
-                                is_sleeptime == TRUE) & info$temp >= 72), 
+info$action <- ifelse(((is_morning_nap == TRUE | is_sleeptime == TRUE) 
+                       & info$temp >= 68) | (!(is_morning_nap == TRUE | 
+                                                   is_afternoon_nap == TRUE | 
+                                                   is_sleeptime == TRUE) & 
+                                                 info$temp >= 72) | 
+                          is_afternoon_nap == TRUE, 
                       "on", "off")
 
 print(paste0(Sys.time(), ": Formatted Data. Telling VeSync what to do."))
